@@ -1,9 +1,8 @@
 package rentcar;
 
 public class Avante extends Car {
-
+    private static final String NAME = "Avante";
     private final int driveDistance;
-    private final String name = "Avante";
 
     public Avante(int driveDistance) {
         this.driveDistance = driveDistance;
@@ -21,11 +20,7 @@ public class Avante extends Car {
 
     @Override
     String getName() {
-        return this.name;
+        return NAME;
     }
 
-    @Override
-    public String toString() {
-        return getName() + " : " + (int)getChargeQuantity() + "리터\n";
-    }
 }

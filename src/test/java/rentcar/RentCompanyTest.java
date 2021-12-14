@@ -17,12 +17,12 @@ public class RentCompanyTest {
         company.addCar(new K5(390));
 
         String report = company.generateReport();
-        String s = "Sonata : 15리터\n" +
-                "K5 : 20리터\n" +
-                "Sonata : 12리터\n" +
-                "Avante : 20리터\n" +
-                "K5 : 30리터";
-
-        assertThat(report).isEqualTo(s);
+        assertThat(report).isEqualTo(
+                "Sonata : 15리터" + NEWLINE +
+                        "K5 : 20리터" + NEWLINE +
+                        "Sonata : 12리터" + NEWLINE +
+                        "Avante : 20리터" + NEWLINE +
+                        "K5 : 30리터" + NEWLINE
+        );
     }
 }

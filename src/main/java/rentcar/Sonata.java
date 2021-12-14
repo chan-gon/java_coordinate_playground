@@ -2,8 +2,8 @@ package rentcar;
 
 public class Sonata extends Car{
 
+    private static final String NAME = "Sonata";
     private final int driveDistance;
-    private final String name = "Sonata";
 
     public Sonata(int driveDistance) {
         this.driveDistance = driveDistance;
@@ -21,11 +21,7 @@ public class Sonata extends Car{
 
     @Override
     String getName() {
-        return this.name;
+        return NAME;
     }
 
-    @Override
-    public String toString() {
-        return getName() + " : " + (int)getChargeQuantity() + "리터\n";
-    }
 }
