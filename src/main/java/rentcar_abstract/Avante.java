@@ -1,12 +1,11 @@
-package rentcar;
+package rentcar_abstract;
 
-public class K5 extends Car{
+public class Avante extends Car{
 
-    private static final int DISTANCE_PER_LITER = 13;
-    private static final String NAME = "K5";
+    private static final int DISTANCE_PER_LITER = 15;
+    private static final String NAME = "Avante";
     private final int tripDistance;
-
-    public K5(int tripDistance) {
+    public Avante(int tripDistance) {
         this.tripDistance = tripDistance;
     }
 

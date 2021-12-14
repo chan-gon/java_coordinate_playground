@@ -1,6 +1,6 @@
-package rentcar;
+package rentcar_interface;
 
-public class Sonata extends Car{
+public class Sonata implements CarInterface{
 
     private static final int DISTANCE_PER_LITER = 10;
     private static final String NAME = "Sonata";
@@ -11,17 +11,22 @@ public class Sonata extends Car{
     }
 
     @Override
-    double getDistancePerLiter() {
+    public double getDistancePerLiter() {
         return DISTANCE_PER_LITER;
     }
 
     @Override
-    double getTripDistance() {
+    public double getTripDistance() {
         return this.tripDistance;
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return NAME;
+    }
+
+    @Override
+    public double getChargeQuantity() {
+        return CarInterface.super.getChargeQuantity();
     }
 }
