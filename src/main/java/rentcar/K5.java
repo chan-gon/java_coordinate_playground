@@ -1,21 +1,31 @@
 package rentcar;
 
 public class K5 extends Car{
-    public K5(int i) {
+
+    private final int driveDistance;
+    private final String name = "K5";
+
+    public K5(int driveDistance) {
+        this.driveDistance = driveDistance;
     }
 
     @Override
     double getDistancePerLiter() {
-        return 0;
+        return 13;
     }
 
     @Override
     double getTripDistance() {
-        return 0;
+        return this.driveDistance;
     }
 
     @Override
     String getName() {
-        return null;
+        return this.name;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " : " + (int)getChargeQuantity() + "리터\n";
     }
 }
