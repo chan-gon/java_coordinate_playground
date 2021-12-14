@@ -1,7 +1,6 @@
 package rentcar;
 
 public abstract class Car {
-
     /**
      * 리터당 이동 거리. 즉, 연비
      */
