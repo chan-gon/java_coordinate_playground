@@ -1,4 +1,4 @@
-package rentcar_abstract;
+package rentcar;
 
 import org.junit.jupiter.api.Test;
 

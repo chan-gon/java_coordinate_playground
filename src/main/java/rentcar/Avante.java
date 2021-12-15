@@ -1,32 +1,26 @@
-package rentcar_interface;
+package rentcar;
 
-public class Avante implements CarInterface {
+public class Avante extends Car{
 
     private static final int DISTANCE_PER_LITER = 15;
     private static final String NAME = "Avante";
     private final int tripDistance;
-
     public Avante(int tripDistance) {
         this.tripDistance = tripDistance;
     }
 
     @Override
-    public double getDistancePerLiter() {
+    double getDistancePerLiter() {
         return DISTANCE_PER_LITER;
     }
 
     @Override
-    public double getTripDistance() {
+    double getTripDistance() {
         return this.tripDistance;
     }
 
     @Override
-    public String getName() {
+    String getName() {
         return NAME;
-    }
-
-    @Override
-    public double getChargeQuantity() {
-        return CarInterface.super.getChargeQuantity();
     }
 }
